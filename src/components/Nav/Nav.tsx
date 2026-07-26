@@ -2,7 +2,7 @@ import { useState } from "react"
 import "./Nav.css"
 
 export const Nav = () => {
-    const [activeSection, setActiveSection] = useState("home")
+    const [activeSection, setActiveSection] = useState<string>("home")
     return (
         <nav>
             <ul className="nav-items">
