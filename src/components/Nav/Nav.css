@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav-item {
+    list-style: none;
+    text-decoration: none;
+    padding: 0.25rem 1.25rem;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s, border-color 0.5s;
+}
+
+.link.active{
+    border-bottom: 3px solid hsl(39, 100%, 51%);
+    color: white
+}
+
+.link:hover {
+    border-bottom: 3px solid hsl(39, 100%, 51%);
+    color: hsl(39, 100%, 51%);
+}

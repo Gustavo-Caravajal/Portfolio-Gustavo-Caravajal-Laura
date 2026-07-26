@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10rem 1rem 10rem;
+}
+
+h4{
+    transition: color 0.5s, border-color 0.5s;
+}
+
+h4:hover {
+    color: hsl(39, 100%, 51%);
+}
+
+
+@media (max-width: 768px){
+    header{
+        padding: 1rem;
+    }
+}
