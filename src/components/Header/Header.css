@@ -1,12 +1,12 @@
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 10rem 1rem 10rem;
+    padding: 1.5rem 5rem 1rem 5rem;
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
 }
 
-h4{
+h4 {
     transition: color 0.5s, border-color 0.5s;
 }
 
@@ -14,9 +14,39 @@ h4:hover {
     color: hsl(39, 100%, 51%);
 }
 
+.hamburger-button {
+    display: none;
+}
 
-@media (max-width: 768px){
-    header{
-        padding: 1rem;
+
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 3rem 1rem 3rem;
+        margin-bottom: 2rem;
+
+    }
+
+    header.open {
+        flex-direction: column;
+        padding-bottom: 1rem;
+
+    }
+
+
+    .hidden-logo {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: flex;
+        font-size: large;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        align-self: flex-end;
+        background-color: transparent;
+        border: none;
+        color: white;
+        text-align: center;
     }
 }

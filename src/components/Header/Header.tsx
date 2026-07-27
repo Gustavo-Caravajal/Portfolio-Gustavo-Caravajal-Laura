@@ -1,11 +1,21 @@
+import { useState } from "react";
 import { Nav } from "../Nav/Nav"
 import "./Header.css"
 
 export const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
     return (
-        <header>
-            <h4>Gustavo C.</h4>
-            <Nav/>
+        <header className={isMenuOpen ? "open" : ""}>
+            <h4 className={isMenuOpen ? "hidden-logo" : ""}>Gustavo C.</h4>
+            <button className="hamburger-button" onClick={toggleMenu}>≡</button>
+            <Nav 
+                isMenuOpen={isMenuOpen}
+            />
         </header>
     )
 }

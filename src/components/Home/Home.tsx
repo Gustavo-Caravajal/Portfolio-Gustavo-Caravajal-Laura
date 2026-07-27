@@ -8,7 +8,7 @@ export const Home = () => {
                     <a href="https://www.linkedin.com/in/gustavo-caravajal-669a37213/" target="_blank"><img className="social-logo" src="../../../public/images/linkedin.png" alt="linkedin" /></a>
                     <a href="https://github.com/Gustavo-Caravajal" target="_blank"><img className="social-logo" src="../../../public/images/github.png" alt="github" /></a>                    
                 </div>
-                <img className="profile-image" src="../../../public/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
+                <img draggable="false" className="profile-image" src="../../../public/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
             </div>
             <div className="presentation">
                 <p>Hola, soy Gustavo Caravajal Laura</p>
@@ -25,7 +25,6 @@ export const Home = () => {
                     <button className="button projects">Proyectos</button>
                 </div>
             </div>
-
         </div>
     );
 }
