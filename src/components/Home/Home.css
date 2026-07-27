@@ -6,6 +6,7 @@
     align-items: center;
     gap: 4rem;
     flex-wrap: wrap;
+    padding: 2rem;
 }
 
 .profile {
@@ -117,7 +118,7 @@
         flex-direction: column;
     }
 
-    .profile-social{
+    .profile-social {
         flex-direction: row;
         gap: 0.75rem;
     }
@@ -131,7 +132,7 @@
         width: 80%;
         align-items: center;
     }
-    
+
     .presentation-buttons {
         justify-content: center;
     }

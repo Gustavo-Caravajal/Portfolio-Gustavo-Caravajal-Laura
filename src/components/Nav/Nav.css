@@ -43,7 +43,7 @@
 
     }
 
-    .nav-closed{
+    .nav-closed {
         display: none;
     }
 
@@ -69,6 +69,13 @@
         flex-direction: column;
         gap: 0.25rem;
         align-items: center;
-
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(37, 37, 37);
+        padding: 1rem 0;
+        z-index: 999;
+        box-shadow: 0 20px 10px 0px rgba(0, 0, 0, 0.6);
     }
 }
