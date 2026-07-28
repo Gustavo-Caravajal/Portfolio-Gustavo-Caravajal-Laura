@@ -11,7 +11,7 @@ export const Header = () => {
 
     return (
         <header className={isMenuOpen ? "open" : ""}>
-            <h4 className={isMenuOpen ? "hidden-logo" : ""}>Gustavo C.</h4>
+            <h4 className={isMenuOpen ? "hidden-logo" : "logo"}>Gustavo C.</h4>
             <button className="hamburger-button" onClick={toggleMenu}>≡</button>
             <Nav 
                 isMenuOpen={isMenuOpen}

@@ -3,16 +3,24 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem 5rem 1rem 5rem;
-    box-shadow: 0 5px 20px rgb(0, 0, 0);
-    position: relative;
+    box-shadow: 0 5px 20px rgb(24, 24, 24);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(37, 37, 37);
+    height: auto;
 }
 
-h4 {
+h4.logo {
     transition: color 0.5s, border-color 0.5s;
 }
 
-h4:hover {
+h4.logo:hover {
     color: hsl(39, 100%, 51%);
+    cursor: pointer;
 }
 
 .hamburger-button {
