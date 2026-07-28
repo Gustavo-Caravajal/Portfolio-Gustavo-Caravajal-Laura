@@ -1,7 +1,7 @@
 .home-container {
     display: flex;
     flex-direction: row;
-    min-height: calc(100vh - 64px);   
+    min-height: calc(100vh - 64px);
     justify-content: center;
     align-items: center;
     gap: 4rem;
@@ -58,6 +58,7 @@
 
 .profession {
     color: hsl(39, 100%, 51%);
+    font-size:x-large;
 }
 
 
@@ -98,12 +99,10 @@
     background-color: transparent;
     border: 1px solid hsl(39, 100%, 51%);
     transition: color 0.4s, box-shadow 0.4s;
-
 }
 
 .button.projects:hover {
     color: hsl(39, 100%, 51%);
-
 }
 
 
@@ -111,6 +110,7 @@
     .home-container {
         flex-direction: column;
         gap: 0.75rem;
+        padding: 1rem;
     }
 
     .profile {
@@ -129,8 +129,12 @@
     }
 
     .presentation {
-        width: 80%;
+        width: 85%;
         align-items: center;
+    }
+
+    p{
+        text-align:inherit;
     }
 
     .presentation-buttons {
