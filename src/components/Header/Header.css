@@ -27,7 +27,6 @@ h4.logo:hover {
     display: none;
 }
 
-
 @media (max-width: 768px) {
     header {
         padding: 1.5rem 3rem 1rem 3rem;
@@ -38,7 +37,6 @@ h4.logo:hover {
         padding-bottom: 1rem;
         box-shadow: none;
     }
-
 
     .hidden-logo {
         display: none;

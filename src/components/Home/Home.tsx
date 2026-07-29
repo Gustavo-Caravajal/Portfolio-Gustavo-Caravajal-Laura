@@ -6,7 +6,7 @@ export const Home = () => {
             <div className="profile">
                 <div className="profile-social">
                     <a href="https://www.linkedin.com/in/gustavo-caravajal-669a37213/" target="_blank"><img className="social-logo" src="../../../public/images/linkedin.png" alt="linkedin" /></a>
-                    <a href="https://github.com/Gustavo-Caravajal" target="_blank"><img className="social-logo" src="../../../public/images/github.png" alt="github" /></a>                    
+                    <a href="https://github.com/Gustavo-Caravajal" target="_blank"><img className="social-logo" src="../../../public/images/github.png" alt="github" /></a>
                 </div>
                 <img className="profile-image" draggable="false" src="../../../public/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
             </div>

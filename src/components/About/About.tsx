@@ -1,6 +1,21 @@
 import "./About.css"
 import "../../../public/images/node.png"
 export const About = () => {
+    const skills: string[] = [
+        "html",
+        "css",
+        "js",
+        "ts",
+        "react",
+        "node",
+        "express",
+        "firestore",
+        "jwt",
+        "postman",
+        "git",
+        "vscode",
+        "github"
+    ];
 
     return (
         <div className="about-container">
@@ -15,22 +30,18 @@ export const About = () => {
                 </div>
                 <div className="skills">
                     <div className="skills-header">
-                        <h2 className="about-title">Skills</h2>
+                        <h2 className="about-title">Tecnologías </h2>
                     </div>
                     <div className="skill-icons">
-                        <img className="skill-icon" src="../../../public/images/html.png" alt="html" />
-                        <img className="skill-icon" src="../../../public/images/css.png" alt="css" />
-                        <img className="skill-icon" src="../../../public/images/js.png" alt="js" />
-                        <img className="skill-icon" src="../../../public/images/ts.png" alt="ts" />
-                        <img className="skill-icon" src="../../../public/images/react.png" alt="react" />
-                        <img className="skill-icon" src="../../../public/images/node.png" alt="node" />
-                        <img className="skill-icon" src="../../../public/images/express.png" alt="express" />
-                        <img className="skill-icon" src="../../../public/images/firestore.png" alt="firestore" />
-                        <img className="skill-icon" src="../../../public/images/jwt.png" alt="jwt" />
-                        <img className="skill-icon" src="../../../public/images/postman.png" alt="postman" />
-                        <img className="skill-icon" src="../../../public/images/git.png" alt="git" />
-                        <img className="skill-icon" src="../../../public/images/vscode.png" alt="vscode" />
-                        <img className="skill-icon" src="../../../public/images/github.png" alt="github" />
+                        {skills.map((skill) =>
+                            <img
+                                key={skill}
+                                className="skill-icon"
+                                src={`/images/${skill}.png`}
+                                alt={skill}
+                                draggable={false}
+                            />
+                        )}
                     </div>
 
                 </div>

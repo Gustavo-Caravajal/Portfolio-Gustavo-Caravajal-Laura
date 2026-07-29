@@ -14,6 +14,7 @@ export const Nav = ({ isMenuOpen }: NavProps) => {
                 <ul className={isMenuOpen ? "nav-items open" : "nav-items"}>
                     <li className="nav-item">
                         <a
+                            href="#home"
                             className={activeSection === "home" ? "link active" : "link"}
                             onClick={() => setActiveSection("home")}
                         >

@@ -31,10 +31,6 @@
     color: hsl(39, 100%, 51%);
 }
 
-
-
-
-
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -53,8 +49,7 @@
         justify-content: center;
         width: 100%;
     }
-
-
+    
     .nav-item {
         padding: 0.25rem 0;
     }
