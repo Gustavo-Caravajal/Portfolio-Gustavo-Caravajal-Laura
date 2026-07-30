@@ -1,64 +1,106 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./Nav.css"
 
 type NavProps = {
-    isMenuOpen: boolean
+    isMenuOpen: boolean,
+    toggleMenu: () => void
 }
 
-export const Nav = ({ isMenuOpen }: NavProps) => {
+export const Nav = ({ isMenuOpen, toggleMenu }: NavProps) => {
     const [activeSection, setActiveSection] = useState<string>("home");
+
+    const scrollToSection = (id: string) => {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: "smooth",
+        })
+    };
+
+    useEffect(() => {
+        const sections = document.querySelectorAll("section");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if(entry.isIntersecting){
+                        setActiveSection(entry.target.id)
+                    }
+                });
+            },
+            {
+                threshold: 0.6,
+            }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, [])
 
     return (<>
 
-            <nav className={isMenuOpen ? "nav nav-open" : "nav nav-closed"}>
-                <ul className={isMenuOpen ? "nav-items open" : "nav-items"}>
-                    <li className="nav-item">
-                        <a
-                            href="#home"
-                            className={activeSection === "home" ? "link active" : "link"}
-                            onClick={() => setActiveSection("home")}
-                        >
-                            Inicio
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                            href="#about"
-                            className={activeSection === "about" ? "link active" : "link"}
-                            onClick={() => setActiveSection("about")}
-                        >
-                            Sobre mí
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                            href="#projects"
-                            className={activeSection === "projects" ? "link active" : "link"}
-                            onClick={() => setActiveSection("projects")}
-                        >
-                            Proyectos
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                            href="#education"
-                            className={activeSection === "education" ? "link active" : "link"}
-                            onClick={() => setActiveSection("education")}
-                        >
-                            Educación
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                            href="#contact"
-                            className={activeSection === "contact" ? "link active" : "link"}
-                            onClick={() => setActiveSection("contact")}
-                        >
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        
+        <nav className={isMenuOpen ? "nav nav-open" : "nav nav-closed"}>
+            <ul className={isMenuOpen ? "nav-items open" : "nav-items close"}>
+                <li className="nav-item">
+                    <a
+                        className={activeSection === "home" ? "link active" : "link"}
+                        onClick={() => {
+                            scrollToSection("home");
+                            setActiveSection("home");
+                            toggleMenu();
+                        }}
+                    >
+                        Inicio
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a
+                        className={activeSection === "about" ? "link active" : "link"}
+                        onClick={() => {
+                            scrollToSection("about");
+                            setActiveSection("about");
+                            toggleMenu();
+                        }}
+                    >
+                        Sobre mí
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a
+                        className={activeSection === "projects" ? "link active" : "link"}
+                        onClick={() => {
+                            scrollToSection("projects");
+                            setActiveSection("projects");
+                            toggleMenu();
+                        }}
+                    >
+                        Proyectos
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a
+                        className={activeSection === "education" ? "link active" : "link"}
+                        onClick={() => {
+                            scrollToSection("education");
+                            setActiveSection("education");
+                            toggleMenu();
+                        }}
+                    >
+                        Educación
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a
+                        className={activeSection === "contact" ? "link active" : "link"}
+                        onClick={() => {
+                            scrollToSection("contact");
+                            setActiveSection("contact");
+                            toggleMenu();
+                        }}
+                    >
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
     </>)
 }

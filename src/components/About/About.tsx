@@ -18,7 +18,7 @@ export const About = () => {
     ];
 
     return (
-        <div className="about-container">
+        <section id="about" className="about-container">
             <div className="about-info">
                 <div className="about">
                     <h2 className="about-title">Sobre mí</h2>
@@ -47,7 +47,7 @@ export const About = () => {
                 </div>
             </div>
             <img className="about-image" draggable={false} src="../../../public/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
-        </div>
+        </section>
     );
 
 

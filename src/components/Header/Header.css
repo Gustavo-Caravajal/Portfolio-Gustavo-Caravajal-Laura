@@ -54,4 +54,8 @@ h4.logo:hover {
         color: white;
         text-align: center;
     }
+
+    .hamburger-button {
+        cursor: pointer;
+    }
 }

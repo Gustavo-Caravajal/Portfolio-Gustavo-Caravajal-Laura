@@ -15,6 +15,7 @@ export const Header = () => {
             <button className="hamburger-button" onClick={toggleMenu}>≡</button>
             <Nav 
                 isMenuOpen={isMenuOpen}
+                toggleMenu={toggleMenu}
             />
         </header>
     )

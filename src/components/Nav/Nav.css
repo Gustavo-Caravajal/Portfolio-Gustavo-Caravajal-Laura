@@ -15,10 +15,14 @@
     padding: 0.25rem 1.25rem;
 }
 
+.nav-item{
+    cursor: pointer;
+}
+
 .link {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    transition: color 0.5s, border-color 0.5s;
+    transition: color 0.5s, border-color 1s;
 }
 
 .link.active {

@@ -2,7 +2,7 @@ import "./Home.css"
 
 export const Home = () => {
     return (
-        <div className="home-container">
+        <section id="home" className="home-container">
             <div className="profile">
                 <div className="profile-social">
                     <a href="https://www.linkedin.com/in/gustavo-caravajal-669a37213/" target="_blank"><img className="social-logo" src="../../../public/images/linkedin.png" alt="linkedin" /></a>
@@ -25,6 +25,6 @@ export const Home = () => {
                     <button className="button projects">Proyectos</button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
