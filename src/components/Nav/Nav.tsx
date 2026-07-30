@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Nav.css"
+import { scrollToSection } from "../../helpers/scrollToSection"
 
 type NavProps = {
     isMenuOpen: boolean,
@@ -7,13 +8,7 @@ type NavProps = {
 }
 
 export const Nav = ({ isMenuOpen, toggleMenu }: NavProps) => {
-    const [activeSection, setActiveSection] = useState<string>("home");
-
-    const scrollToSection = (id: string) => {
-        document.getElementById(id)?.scrollIntoView({
-            behavior: "smooth",
-        })
-    };
+    const [activeSection, setActiveSection] = useState<string>("home");    
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");

@@ -1,3 +1,4 @@
+import { scrollToSection } from "../../helpers/scrollToSection";
 import "./Home.css"
 
 export const Home = () => {
@@ -22,7 +23,7 @@ export const Home = () => {
                 </p>
                 <div className="presentation-buttons">
                     <button className="button download">Descargar CV</button>
-                    <button className="button projects">Proyectos</button>
+                    <button onClick={() => scrollToSection("projects")} className="button projects">Proyectos</button>
                 </div>
             </div>
         </section>
