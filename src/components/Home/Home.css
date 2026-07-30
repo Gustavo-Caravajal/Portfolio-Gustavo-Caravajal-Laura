@@ -76,6 +76,8 @@
     font-weight: 600;
     font-family: inherit;
     transition: box-shadow 0.4s;
+    height: 46px;
+    width: 135px;
 }
 
 .button:hover {
@@ -136,7 +138,18 @@
     }
 
     .presentation-buttons {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
         padding-top: 0.5rem;
     }
+    
+    .button.download{
+        width: 130px;
+    }
+    
+    .button.projects{
+        width: 130px;
+    }    
 }
