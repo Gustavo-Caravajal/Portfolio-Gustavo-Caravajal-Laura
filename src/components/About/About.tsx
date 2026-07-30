@@ -22,7 +22,7 @@ export const About = () => {
             <div className="about-info">
                 <div className="about">
                     <h2 className="about-title">Sobre mí</h2>
-                    <img className="about-image mobile" draggable={false} src="../../../public/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
+                    <img className="about-image mobile" draggable={false} src="/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
                     <p className="about-text">
                         Soy estudiante de Ingeniería en Informática y desarrollador Full Stack. Me apasiona el desarrollo web y el aprendizaje continuo, creando proyectos con React, Node.js, Express y TypeScript. Busco seguir creciendo profesionalmente mientras desarrollo aplicaciones modernas, eficientes y bien estructuradas.
                     </p>
@@ -46,7 +46,7 @@ export const About = () => {
 
                 </div>
             </div>
-            <img className="about-image" draggable={false} src="../../../public/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
+            <img className="about-image" draggable={false} src="/images/Gustavo_Caravajal_Laura.png" alt="Gustavo Caravajal Laura" />
         </section>
     );
 
