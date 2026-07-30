@@ -129,24 +129,26 @@
     gap: 2px;
 }
 
-.action.demo {
+.action.demo, .action.repo {
     color: black;
     border: 1px solid hsl(39, 100%, 50%);
     transition: filter 0.2s ease, scale 0.4s;
+    background-color: hsl(39, 100%, 50%);
 }
 
-.action.demo:hover {
+.action.demo:hover, .action.repo:hover  {
     filter: brightness(1.15);
     scale: 1.025;
 }
 
-.action.github {
+.action.github{
+    background-color: rgb(37, 37, 37);
     color: white;
     border: 1px solid white;
     transition: scale 0.4s;
 }
 
-.action.github:hover {
+.action.github:hover{
     color: hsl(39, 100%, 50%);
     border: 1px solid hsl(39, 100%, 50%);
     scale: 1.025;

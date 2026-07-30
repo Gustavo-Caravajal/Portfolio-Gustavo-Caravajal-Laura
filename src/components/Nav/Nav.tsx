@@ -21,7 +21,7 @@ export const Nav = ({ isMenuOpen, toggleMenu }: NavProps) => {
                 });
             },
             {
-                threshold: 0.6,
+                threshold: 0.3,
             }
         );
 
@@ -31,7 +31,6 @@ export const Nav = ({ isMenuOpen, toggleMenu }: NavProps) => {
     }, [])
 
     return (<>
-
         <nav className={isMenuOpen ? "nav nav-open" : "nav nav-closed"}>
             <ul className={isMenuOpen ? "nav-items open" : "nav-items close"}>
                 <li className="nav-item">
@@ -96,6 +95,5 @@ export const Nav = ({ isMenuOpen, toggleMenu }: NavProps) => {
                 </li>
             </ul>
         </nav>
-
     </>)
 }
