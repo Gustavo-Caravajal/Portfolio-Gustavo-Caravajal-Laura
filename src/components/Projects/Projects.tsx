@@ -97,7 +97,7 @@ export const Projects = () => {
             <div className="projects">
                 {projects.map((project) =>
                     <div key={project.id} className="project">
-                        <img className="project-img" src={project.imageUrl} alt="" />
+                        <img className="project-img" src={project.imageUrl} alt="" draggable={false} />
                         <div className="card-top">
                             <h4 className="card-title">{project.projectName}</h4>
                             <span className="card-tag">{project.projectType}</span>
