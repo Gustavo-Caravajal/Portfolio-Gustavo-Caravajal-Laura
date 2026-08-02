@@ -27,6 +27,7 @@
 .education-info{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .title{
@@ -49,5 +50,18 @@
         flex-direction: column;
         align-items: center;
         padding: 5.9rem 1rem 1rem 1rem;
+    }
+
+    .education-item{
+        width: 80%;
+    }
+
+    .education-info{
+        align-items: center;
+    }
+
+    .details{
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
