@@ -51,7 +51,7 @@ export const Contact = () => {
                     </li>
                     <li className="contact-item">
                         <img className="contact-icon" src="images/disponibilidad.png" alt="disponibilidad" />
-                        Disponible: Lun-Vie, 9AM - 6PM
+                        Disponible: Lun-Vie, 9AM - 5PM
                     </li>
                 </ul>
                 <form className="form" action="" onSubmit={handleSubmit}>
