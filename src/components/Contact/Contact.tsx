@@ -43,7 +43,7 @@ export const Contact = () => {
                     </li>
                     <li className="contact-item">
                         <img className="contact-icon" src="/images/telefono.png" alt="telefono" />
-                        +9 11 63614047
+                        +54 9 11 63614047
                     </li>
                     <li className="contact-item">
                         <img className="contact-icon" src="images/ubicacion.png" alt="ubicacion" />
