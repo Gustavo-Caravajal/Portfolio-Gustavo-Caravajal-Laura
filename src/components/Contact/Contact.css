@@ -60,10 +60,12 @@
     height: 1.5rem;
     border-radius: 7.5px;
     color: white;
+    font-family: inherit;
 }
 
 .form-field.text-area {
     height: 7.5rem;
+    font-family: inherit;
 }
 
 .submit-button {
@@ -97,7 +99,7 @@
         align-items: center;
     }
 
-    .form{
+    .form {
         width: 95%;
     }
 }
