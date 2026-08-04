@@ -1,5 +1,4 @@
 import "./About.css"
-import "../../../public/images/node.png"
 export const About = () => {
     const skills: string[] = [
         "html",
