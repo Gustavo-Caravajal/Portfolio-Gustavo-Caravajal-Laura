@@ -22,8 +22,8 @@ export const Home = () => {
                     transformar ideas en proyectos funcionales.
                 </p>
                 <div className="presentation-buttons">
-                    <button className="button download">Descargar CV</button>
-                    <button onClick={() => scrollToSection("projects")} className="button projects">Proyectos</button>
+                    <a className="button download">Descargar CV</a>
+                    <a onClick={() => scrollToSection("projects")} className="button projects">Proyectos</a>
                 </div>
             </div>
         </section>

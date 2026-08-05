@@ -26,9 +26,11 @@
 .contact-list {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 1rem;
     list-style: none;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
 }
 
 .contact-item {
@@ -36,6 +38,7 @@
     align-items: center;
     gap: 0.5rem;
     color: white;
+    font-size: small;
 }
 
 .contact-icon {
